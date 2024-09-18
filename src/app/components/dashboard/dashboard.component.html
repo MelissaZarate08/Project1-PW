@@ -1,0 +1,72 @@
+<div class="dashboard-card">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>Agregar Pedido</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <form class="pedido-form" (ngSubmit)="agregarPedido()">
+          <mat-form-field appearance="fill">
+            <mat-label>ID del Pedido</mat-label>
+            <input matInput [(ngModel)]="nuevoPedido.id" name="id" type="number" required>
+          </mat-form-field>
+  
+          <mat-form-field appearance="fill">
+            <mat-label>Nombre del Cliente</mat-label>
+            <input matInput [(ngModel)]="nuevoPedido.cliente" name="cliente" required>
+          </mat-form-field>
+  
+          <mat-form-field appearance="fill">
+            <mat-label>Plato</mat-label>
+            <input matInput [(ngModel)]="nuevoPedido.plato" name="plato" required>
+          </mat-form-field>
+  
+          <mat-form-field appearance="fill">
+            <mat-label>Precio</mat-label>
+            <input matInput [(ngModel)]="nuevoPedido.precio" name="precio" type="number" required>
+          </mat-form-field>
+  
+          <mat-form-field appearance="fill">
+            <mat-label>Ingredientes</mat-label>
+            <input matInput [(ngModel)]="ingredientString" name="ingredients" required>
+          </mat-form-field>
+  
+          <button mat-raised-button color="primary" type="submit">Agregar Pedido</button>
+        </form>
+      </mat-card-content>
+    </mat-card>
+  
+    <mat-card class="pedido-table-card">
+      <mat-card-header>
+        <mat-card-title>Pedidos</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <table class="pedido-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Cliente</th>
+              <th>Plato</th>
+              <th>Precio</th>
+              <th>Ingredientes</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let pedido of pedidosArray; let i = index">
+              <td>{{ pedido.id }}</td>
+              <td>{{ pedido.cliente }}</td>
+              <td>{{ pedido.plato }}</td>
+              <td>{{ pedido.precio }}</td>
+              <td>{{ pedido.ingredients.join(', ') }}</td>
+              <td>
+                <button mat-icon-button color="warn" (click)="eliminarPedido(i)">
+                  <mat-icon>delete</mat-icon>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  

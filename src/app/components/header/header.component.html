@@ -1,0 +1,33 @@
+<header class="header-restaurant">
+
+    <div class="menu-hamburguesa">
+      <nav class="footer-nav">
+        <ul class="footer-nav-list">
+          <li class="footer-nav-item"><a href="#" class="footer-nav-link">Inicio</a></li>
+          <li class="footer-nav-item"><a href="#" class="footer-nav-link">Menú</a></li>
+          <li class="footer-nav-item"><a href="#" class="footer-nav-link">Pedidos</a></li>
+          <li class="footer-nav-item"><a href="#" class="footer-nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+      <i class="fas fa-bars icon" (click)="toggleMenu()"></i>
+      <nav class="menu-opciones" [class.show]="menuVisible">
+        <ul class="menu-opciones-ul">
+          <li class="menu-opciones-li">
+            <a href="#" class="menu-opciones-li-a">
+              <i class="fas fa-plus-circle icon"></i> Crear Pedido
+            </a>
+          </li>
+          <li class="menu-opciones-li">
+            <a href="#" class="menu-opciones-li-a">
+              <i class="fas fa-eye icon"></i> Ver Pedidos
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  
+  
+    <img src="comida.png" alt="Logo del Restaurante" class="logo">
+   
+  </header>
+  

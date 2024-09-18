@@ -1,0 +1,63 @@
+.footer-restaurant {
+    background-color: #343a40; 
+    color: #ffffff; 
+    padding: 40px 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-nav {
+    margin-bottom: 30px;
+  }
+  
+  .footer-nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+  }
+  
+  .footer-nav-item {
+    margin: 0;
+  }
+  
+  .footer-nav-link {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-nav-link:hover {
+    color: #ffcc00; 
+  }
+  
+  .footer-socials {
+    margin: 20px 0;
+  }
+  
+  .footer-social-link {
+    color: #ffffff;
+    margin: 0 15px; 
+    font-size: 24px; 
+    transition: color 0.3s ease; 
+  }
+  
+  .footer-social-link:hover {
+    color: #ffcc00; 
+  }
+  
+  .footer-bottom {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #b0b0b0; 
+  }
+  

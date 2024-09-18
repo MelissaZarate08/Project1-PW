@@ -1,0 +1,114 @@
+.header-restaurant {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    position: relative;
+    
+    
+    .footer-nav {
+      margin-bottom: 5px;
+    }
+    
+    .footer-nav-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px; 
+    }
+    
+    .footer-nav-item {
+      margin: 0;
+    }
+    
+    .footer-nav-link {
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: 600;
+      transition: color 0.3s ease; 
+    }
+    
+    .footer-nav-link:hover {
+      color: #ffcc00; 
+    }
+    .footer-restaurant {
+      background-color: #343a40; 
+      color: #ffffff; 
+      padding: 40px 0;
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+    
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    .logo {
+      height: 50px;
+      width: auto;
+    }
+  
+    .titulo {
+      height: 30px;
+      width: auto;
+    }
+  
+    .menu-hamburguesa {
+      position: relative;
+  
+      .icon {
+        font-size: 24px;
+        color: #fff;
+        cursor: pointer;
+      }
+  
+      .menu-opciones {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #444;
+        border-radius: 4px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        padding: 10px;
+        width: 200px;
+        z-index: 1000;
+  
+        &.show {
+          display: block;
+        }
+  
+        .menu-opciones-ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+  
+          .menu-opciones-li {
+            margin: 10px 0;
+  
+            .menu-opciones-li-a {
+              color: #fff;
+              text-decoration: none;
+              display: flex;
+              align-items: center;
+              font-size: 16px;
+  
+              .icon {
+                margin-right: 10px;
+              }
+  
+              &:hover {
+                color: #ffa500;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
